@@ -17,3 +17,9 @@ Go to client using cd client
 -run npm run dev
 
 visit http://localhost:5173 and enjoy
+
+
+Technologies Used:
+DB: Cassandra
+Backend: Node.js, Express.js
+Frontend: React, TailwindCSS.

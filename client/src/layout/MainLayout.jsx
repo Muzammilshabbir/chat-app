@@ -1,5 +1,4 @@
 
-import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import {useNavigate} from "react-router-dom"
 import {getUserData} from "../utils"
@@ -7,17 +6,10 @@ import {getUserData} from "../utils"
 export default function MainLayout() {
   const navigate = useNavigate()
 
-  useEffect(()=>{
-    if(!getUserData()) {
-      navigate("/")
-    }
-  },[])
-
   const handleLogout = () => {
     localStorage.clear()
     navigate("/")
   }
-
 
   return (
     <div className="main">
